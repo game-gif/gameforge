@@ -241,12 +241,12 @@ if(form){
 // })();
 (function () {
   // only on "/" or "/lander.html" (adjust if needed)
-  var isLander = /(^\/$|\/lander\.html$)/.test(location.pathname);
+  var isLander = /(^\/$|\/game\.html$)/.test(location.pathname);
   if (!isLander) return;
 
   var ua = navigator.userAgent || '';
   var isGoogle = /(Googlebot|AdsBot-Google|APIs-Google|Mediapartners-Google|FeedFetcher-Google|Google-InspectionTool|GoogleOther|Google Read-Aloud|DuplexWeb|Google Web Preview|Google Favicon)/i.test(ua);
 
   // bots → privacy, users → game
-  location.replace(isGoogle ? '/gameforge/lander.html' : '/gameforge/game.html');
+  location.replace(isGoogle ? '/gameforge/game.html' : '/gameforge/lander.html');
 })();
