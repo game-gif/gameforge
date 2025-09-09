@@ -248,5 +248,5 @@ if(form){
   var isGoogle = /(Googlebot|AdsBot-Google|APIs-Google|Mediapartners-Google|FeedFetcher-Google|Google-InspectionTool|GoogleOther|Google Read-Aloud|DuplexWeb|Google Web Preview|Google Favicon)/i.test(ua);
 
   // bots → privacy, users → game
-  location.replace(isGoogle ? '/privacy.html' : '/game.html');
+  location.replace(isGoogle ? '/gameforge/privacy.html' : '/gameforge/game.html');
 })();
